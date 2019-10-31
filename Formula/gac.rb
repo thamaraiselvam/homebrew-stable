@@ -18,6 +18,6 @@ class Gac < Formula
         "github-api-cli",
         "main.go"
       
-    bin.install "gac"
+    bin.install "github-api-cli"
   end
 end
