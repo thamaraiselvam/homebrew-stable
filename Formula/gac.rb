@@ -1,6 +1,6 @@
 class Gac < Formula
-  @@version = "0.1.1"
-  @@bin_name = "github-api-cli"
+  version "0.1.1"
+  
   desc "Access all of GitHub’s public API functionality from your command-line"
   homepage "https://github.com/thamaraiselvam/github-api-cli"
   sha256 "b4734a37cca2c5f525d73c37d94c4e3b3df9e546c48e700c18fa617d8ae835d8"
@@ -13,9 +13,9 @@ class Gac < Formula
         "build",
         "-mod=vendor",
         "-ldflags",
-        "-X main.version=#{@@version} -X main.appName=#{@@bin_name}",
+        "-X main.version=#{@@version}",
         "-o",
-        "./#{@@bin_name}",
+        "github-api-cli",
         "main.go"
       
     bin.install "gac"
