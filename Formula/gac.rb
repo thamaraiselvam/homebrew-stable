@@ -1,5 +1,5 @@
 class Gac < Formula
-  @@version = "v1.0.0"
+  @@version = "0.1.1"
   @@bin_name = "gac"
   desc "Access all of GitHub’s public API functionality from your command-line"
   homepage "https://github.com/thamaraiselvam/github-api-cli"
@@ -18,6 +18,5 @@ system "go",
         "main.go"
       
     bin.install "./#{@@bin_name}"
-  
   end
 end
