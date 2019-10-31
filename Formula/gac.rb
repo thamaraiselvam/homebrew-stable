@@ -13,7 +13,7 @@ class Gac < Formula
         "build",
         "-mod=vendor",
         "-ldflags",
-        "-X main.version=#{@@version}",
+        "-X main.version=#{version}",
         "-o",
         "github-api-cli",
         "main.go"
