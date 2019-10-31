@@ -1,7 +1,7 @@
 # homebrew-stable
 Homebrew tap for thamaraiselvam apps
 
-### Usage
+## Usage
 
 ```
 brew tap thamaraiselvam/stable
