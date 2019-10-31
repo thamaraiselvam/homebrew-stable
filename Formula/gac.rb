@@ -7,8 +7,9 @@ class Gac < Formula
   url "https://github.com/thamaraiselvam/github-api-cli/archive/v#{version}.tar.gz"
 
   depends_on "go" => :build
-
-system "go",
+  
+  def install
+    system "go",
         "build",
         "-mod=vendor",
         "-ldflags",
